@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "AedeScan-apk",
+    "slug": "AedeScan-apk",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icons/icon.png",
+    "userInterfaceStyle": "light",
+    "androidStatusBar": {
+      "backgroundColor": "#2B2D42"
+    },
+    "androidNavigationBar": {
+      "backgroundColor": "#161723"
+    },
+    "splash": {
+      "image": "./assets/icons/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#2B2D42"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icons/adaptive-icon.png",
+        "backgroundColor": "#2B2D42"
+      },
+      "package": "com.luizoass.AedeScanapk"
+    },
+    "web": {
+      "favicon": ""
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3e75ec00-8451-45d9-b1ab-25d8f09a543f"
+      }
+    }
+  }
+}
