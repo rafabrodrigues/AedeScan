@@ -8,11 +8,11 @@ const styles = StyleSheet.create({
     button: {
         alignItems: 'center',
         justifyContent: 'center',
-        paddingVertical: 8,
+        paddingVertical: 12,
         borderRadius: 4,
         shadowColor: "#ededeb",
         shadowOffset: {
-            width: 2,
+            width: 0,
             height: 2,
         },
         shadowOpacity: 4,
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
         elevation: 5,
     },
     buttonText: {
-        fontSize: 18,
+        fontSize: 16,
         fontFamily: 'Poppins_700Bold',
 
     },
