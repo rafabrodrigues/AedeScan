@@ -10,9 +10,9 @@ export default function LoginScreen() {
             <View style={styles.titleContainer}>
                 <Text style={styles.title}>AedeS<Text style={{ color: '#8d99ae' }}>can</Text></Text>
             </View>
-            <g style={styles.subTitleContainer}>
+            <View style={styles.subTitleContainer}>
                 <Text style={styles.subTitle}>Uma pequena atitude, pode fazer uma grande diferença na luta contra a dengue</Text>
-            </g>
+            </View>
             <View style={styles.buttonContainer}>
                 <ButtonLogin
                     text='Entrar na minha conta'
