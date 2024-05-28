@@ -10,7 +10,7 @@
       "backgroundColor": "#2B2D42"
     },
     "androidNavigationBar": {
-      "backgroundColor": "#161723"
+      "backgroundColor": "#2B2D42"
     },
     "splash": {
       "image": "./assets/icons/splash.png",
@@ -34,6 +34,9 @@
       "eas": {
         "projectId": "3e75ec00-8451-45d9-b1ab-25d8f09a543f"
       }
-    }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
