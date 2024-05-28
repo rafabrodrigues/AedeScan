@@ -11,28 +11,25 @@ const styles = StyleSheet.create({
 
     titleContainer: {
         alignItems: 'center',
-        padding: 0,
-        margin: 0,
     },
     title: {
         color: '#d90429',
         fontSize: 64,
         fontFamily: 'Poppins_700Bold',
-        padding: 0,
-        margin: 0,
     },
     subTitleContainer: {
         alignItems: 'center',
         justifyContent: 'center',
         width: '80%',
-        marginBottom:'25%'
+        marginBottom: '25%'
     },
     subTitle: {
         textAlign: 'center',
         color: '#8d99ae',
         fontFamily: 'Poppins_400Regular_Italic',
         alignItems: 'center',
-        fontSize: 18
+        fontSize: 18,
+        marginTop: -30,
     },
     buttonContainer: {
         width: '90%',
