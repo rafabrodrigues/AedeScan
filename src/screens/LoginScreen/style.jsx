@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     },
     title: {
         color: '#d90429',
-        fontSize: 64,
+        fontSize: 60,
         fontFamily: 'Poppins_700Bold',
     },
     subTitleContainer: {
