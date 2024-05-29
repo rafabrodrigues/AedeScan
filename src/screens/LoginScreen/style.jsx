@@ -24,17 +24,17 @@ const styles = StyleSheet.create({
         marginBottom: '25%'
     },
     subTitle: {
-        textAlign: 'center',
+        textAlign:'center',
         color: '#8d99ae',
         fontFamily: 'Poppins_400Regular_Italic',
         alignItems: 'center',
         fontSize: 18,
-        marginTop: -30,
+        marginTop: -20,
     },
     buttonContainer: {
         width: '90%',
         gap: 16,
-        marginBottom: '10%',
+        marginBottom: '15%',
     },
 });
 

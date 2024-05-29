@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
     buttonText: {
         fontSize: 16,
         fontFamily: 'Poppins_700Bold',
-
     },
 });
 

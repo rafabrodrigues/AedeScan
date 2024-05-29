@@ -1,5 +1,6 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { View, Text } from 'react-native';
 // screens
 import PerfilScreen from './../../screens/PerfilScreen/';
 import HomeScreen from './../../screens/HomeScreen'
@@ -14,8 +15,8 @@ import { FontAwesome6 } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { SimpleLineIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
-
-
+// styles
+import styles from './style';
 
 
 const Tab = createBottomTabNavigator();
@@ -27,7 +28,7 @@ export default function BottomNavigator() {
       tabBarStyle: {
         backgroundColor: '#2b2d42',
         borderTopWidth: 0.18,
-        height: 56,
+        height: 60,
       },
       tabBarActiveTintColor: '#d90429',
       tabBarInactiveTintColor: '#edf2f4',
@@ -53,16 +54,23 @@ export default function BottomNavigator() {
           tabBarLabel: 'Dúvidas'
         }}
       />
+
       <Tab.Screen
         name='denuncia'
         component={LoginScreen}
         options={{
+          tabBarActiveTintColor: '#edf2f4',
           tabBarIcon: ({ color, size }) => (
-            <AntDesign name="warning" color={color} size={22} />
+            <View style={styles.denunciaContainer}>
+              <AntDesign name="warning" color={color} size={32} />
+              <Text style={styles.denunciaText}>Denúncia</Text>
+            </View>
           ),
-          tabBarLabel: 'Denúncias'
+          tabBarLabel: ''
         }}
       />
+
+
       <Tab.Screen
         name='aviso'
         component={AvisoScreen}
