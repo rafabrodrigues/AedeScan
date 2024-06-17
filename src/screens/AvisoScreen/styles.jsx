@@ -1,33 +1,34 @@
-import { StyleSheet } from 'react-native';
+import styled from 'styled-components/native';
 
-const styles = StyleSheet.create({
-    container: {
-        backgroundColor: '#edf2f4',
-        flex: 1,
-        alignItems: 'center',
-    },
-    mainContainer: {
-        flex: 1,
-        width: '90%',
-        justifyContent: 'center',
-    },
-    searchContainer: {
-        backgroundColor: '#2d2b42',
-        flexDirection: 'row',
-        alignItems: 'center',
-        borderRadius:4,
-    },
-    searchIcon: {
-        paddingLeft:12,
-    },
-    searchInput: {
-        padding: 8,
-        fontFamily:'Poppins_400Regular',
-        color:'#fff',
-        width:'100%',
-        fontSize:16,
-    }
+export const Container = styled.View`
+    background-color: #edf2f4;
+    flex: 1;
+    align-items: center;
+`
 
-});
+export const MainContainer = styled.View`
+    flex: 1;
+    width: 90%;
+    justify-content: center;
+`
 
-export default styles;
+export const SearchContainer = styled.View`
+    background-color: #2d2b42;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 4px;
+`
+export const SearchButtonIcon = styled.TouchableOpacity`
+    padding-left: 12px;
+`
+
+export const SearchInput = styled.TextInput`
+    padding: 0.5rem;
+    font-family: 'Poppins_400Regular';
+    color: #fff;
+    width: 100%;
+    font-size: 1rem;
+`
+
+
+

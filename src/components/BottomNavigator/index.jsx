@@ -16,7 +16,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { SimpleLineIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 // styles
-import styles from './style';
+import { DenunciaContainer, TextDenuncia } from './style';
 
 
 const Tab = createBottomTabNavigator();
@@ -61,10 +61,10 @@ export default function BottomNavigator() {
         options={{
           tabBarActiveTintColor: '#edf2f4',
           tabBarIcon: ({ color, size }) => (
-            <View style={styles.denunciaContainer}>
+            <DenunciaContainer>
               <AntDesign name="warning" color={color} size={32} />
-              <Text style={styles.denunciaText}>Denúncia</Text>
-            </View>
+              <TextDenuncia>Denúncia</TextDenuncia>
+            </DenunciaContainer>
           ),
           tabBarLabel: ''
         }}

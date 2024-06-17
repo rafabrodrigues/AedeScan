@@ -1,21 +1,17 @@
-import { StyleSheet } from "react-native";
+import styled from "styled-components/native"
 
-const styles = StyleSheet.create({
-    denunciaContainer: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: -8,
-        backgroundColor: '#d90429',
-        width: 62,
-        height: 62,
-        borderRadius: 360,
+export const DenunciaContainer = styled.View`
+    align-items: center;
+    justify-content: center;
+    margin-top: -8px;
+    background-color:#d90429;
+    width: 62px;
+    height: 62px;
+    border-radius: 360px;
+`
 
-    },
-    denunciaText: {
-        color: '#fff',
-        fontFamily: 'Poppins_400Regular',
-        fontSize: 8
-    }
-})
-
-export default styles
+export const TextDenuncia = styled.Text`
+    color:#fff;
+    font-family: 'Poppins_400Regular';
+    font-size: 8px;
+`

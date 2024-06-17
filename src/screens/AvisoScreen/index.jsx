@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import { View, Text, TextInput, TouchableWithoutFeedback, TouchableOpacity } from 'react-native';
-import styles from './styles';
+
+import { Container, MainContainer, SearchContainer, SearchButtonIcon, SearchInput } from './styles';
 import { AntDesign } from '@expo/vector-icons';
 
 export default function AvisoScreen() {
@@ -15,20 +15,19 @@ export default function AvisoScreen() {
   return (
 
 
-    <View style={styles.container}>
-      <View style={styles.mainContainer}>
-        <View style={styles.searchContainer}>
-          <TouchableOpacity style={styles.searchIcon} onPress={handleSearchPress}>
+    <Container>
+      <MainContainer>
+        <SearchContainer>
+          <SearchButtonIcon onPress={handleSearchPress}>
             <AntDesign name="search1" size={24} color="#fff" />
-          </TouchableOpacity>
-          <TextInput
-            style={styles.searchInput}
+          </SearchButtonIcon>
+          <SearchInput
             ref={searchRef}
-            placeholder='Pesquisar'
+            placeholder='Pesquisar...'
             placeholderTextColor='#edf2f4'
           />
-        </View>
-      </View>
-    </View>
+        </SearchContainer>
+      </MainContainer>
+    </Container>
   );
 }

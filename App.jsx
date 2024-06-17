@@ -29,21 +29,21 @@ import theme from './src/Theme';
 
 export default function App() {
 
-  const [isLoading, setIsLoading] = useState(true);
-  const [seconds, setSeconds] = useState(0);
+  // const [isLoading, setIsLoading] = useState(true);
+  // const [seconds, setSeconds] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSeconds(seconds + 1);
-    }, 1000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setSeconds(seconds + 1);
+  //   }, 1000);
 
-    if (seconds >= 7) {
-      clearInterval(interval);
-      setIsLoading(false);
-    }
+  //   if (seconds >= 7) {
+  //     clearInterval(interval);
+  //     setIsLoading(false);
+  //   }
 
-    return () => clearInterval(interval)
-  }, [seconds]);
+  //   return () => clearInterval(interval)
+  // }, [seconds]);
 
   const [fontsLoaded] = useFonts({
     Poppins_100Thin,
@@ -72,7 +72,8 @@ export default function App() {
   return (
     <PaperProvider theme={theme}>
       <View style={{ flex: 1, backgroundColor: '#2b2d42' }}>
-        {isLoading ? <Splash /> : <Routes />}
+        {/* {isLoading ? <Splash /> : <Routes />} */}
+        <Routes/>
       </View>
     </PaperProvider>
 
