@@ -5,7 +5,7 @@ import styles from './style'
 export default function DuvidaScreen() {
   return (
     <View style={styles.container}>
-      <Button><Text>fokdskjdsfikfjiokdsoijfdsjio</Text></Button>
+      
     </View>
   )
 }
