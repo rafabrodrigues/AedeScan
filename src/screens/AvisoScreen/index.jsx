@@ -82,17 +82,7 @@ export default function AvisoScreen() {
             </NotificationButton>
           </Notification>
           <Notification>
-            <NotificationDescription>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              finibus dapibus placerat. Nam vulputate erat ligula, a pulvinar
-              risus ullamcorper in. Vivamus tellus erat, malesuada non mi at,
-              dapibus condimentum mi. Aenean tellus odio, condimentum non nisl
-              ut, blandit euismod eros. Nam nibh erat, gravida sit amet rutrum
-              vitae, consequat vitae leo. Praesent facilisis vestibulum diam,
-              vitae pulvinar risus hendrerit porta. Vestibulum nec lobortis
-              justo, nec fringilla augue. Pellentesque et placerat justo. Donec
-              condimentum venenatis fermentum.
-            </NotificationDescription>
+            <NotificationDescription>{truncatedText}</NotificationDescription>
             <NotificationButton>
               <NotificationButtonText color="#fff">
                 Abrir

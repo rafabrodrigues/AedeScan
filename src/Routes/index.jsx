@@ -1,13 +1,11 @@
 import React from 'react'
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native'
-import TabRoutes from './TabRoutes'
+import StackRoutes from './stack.routes';
 
 export default function Routes() {
   return (
       <NavigationContainer>
-        <TabRoutes />
+        <StackRoutes/>
       </NavigationContainer>
   )
 }

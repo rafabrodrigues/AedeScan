@@ -2,13 +2,12 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { View, Text } from 'react-native';
 // screens
-import PerfilScreen from './../../screens/PerfilScreen/';
-import HomeScreen from './../../screens/HomeScreen'
-import DenunciaScreen from './../../screens/DenunciaScreen'
-import DuvidaScreen from './../../screens/DuvidaScreen';
-import AvisoScreen from './../../screens/AvisoScreen';
+import HomeScreen from '../../screens/HomeScreen';
+import DuvidaScreen from '../../screens/DuvidaScreen';
+import DenunciaScreen from '../../screens/DenunciaScreen';
+import AvisoScreen from '../../screens/AvisoScreen';
+import PerfilScreen from '../../screens/PerfilScreen';
 import LoginScreen from '../../screens/LoginScreen';
-
 // icons
 import { Octicons } from '@expo/vector-icons';
 import { FontAwesome6 } from '@expo/vector-icons';
@@ -19,12 +18,14 @@ import { AntDesign } from '@expo/vector-icons';
 import { DenunciaContainer, TextDenuncia } from './style';
 
 
+
+
 const Tab = createBottomTabNavigator();
 
-export default function BottomNavigator() {
+export default function TabRoutes() {
   return (
     <Tab.Navigator screenOptions={{
-      headerShown: false,
+      headerShown: false, 
       tabBarStyle: {
         backgroundColor: '#2b2d42',
         borderTopWidth: 0.18,
@@ -69,7 +70,6 @@ export default function BottomNavigator() {
           tabBarLabel: ''
         }}
       />
-
 
       <Tab.Screen
         name='aviso'
