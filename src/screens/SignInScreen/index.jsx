@@ -1,4 +1,4 @@
-import { Text, Alert } from "react-native";
+import {Alert} from "react-native";
 import React, { useState } from "react";
 import {
   Container,

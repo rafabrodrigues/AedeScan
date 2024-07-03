@@ -4,7 +4,6 @@ import { ButtonContainer, Container, InputContainer } from "./styles";
 import { Input } from "../../components/Input";
 import { Button, ButtonText } from "../../components/Button";
 import { Title } from "../../components/Title";
-import { Label } from "./../../components/Label/index";
 import { supabase } from "../../Supabase/supabaseClient";
 
 export default function SignUpScreen() {
