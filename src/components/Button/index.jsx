@@ -19,3 +19,4 @@ export const ButtonText = styled.Text`
 export const ButtonCadastro = styled(Button)`
     border: 2px solid #edf2f4;
 `
+

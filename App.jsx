@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { useEffect } from 'react';
-import Routes from './src/Routes';
-import Splash from './src/screens/Splash';
-import { View } from 'react-native';
-import { Provider as PaperProvider } from 'react-native-paper';
-import { useFonts } from 'expo-font';
+import React, { useState } from "react";
+import { useEffect } from "react";
+import Routes from "./src/Routes";
+import Splash from "./src/screens/Splash";
+import { View } from "react-native";
+import { Provider as PaperProvider } from "react-native-paper";
+import { useFonts } from "expo-font";
 import {
   Poppins_100Thin,
   Poppins_100Thin_Italic,
@@ -24,26 +24,11 @@ import {
   Poppins_800ExtraBold_Italic,
   Poppins_900Black,
   Poppins_900Black_Italic,
-} from '@expo-google-fonts/poppins';
-import theme from './src/Theme';
+} from "@expo-google-fonts/poppins";
+import theme from "./src/Theme";
 
 export default function App() {
-
-  // const [isLoading, setIsLoading] = useState(true);
-  // const [seconds, setSeconds] = useState(0);
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setSeconds(seconds + 1);
-  //   }, 1000);
-
-  //   if (seconds >= 7) {
-  //     clearInterval(interval);
-  //     setIsLoading(false);
-  //   }
-
-  //   return () => clearInterval(interval)
-  // }, [seconds]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const [fontsLoaded] = useFonts({
     Poppins_100Thin,
@@ -71,11 +56,13 @@ export default function App() {
   }
   return (
     <PaperProvider theme={theme}>
-      <View style={{ flex: 1, backgroundColor: '#2b2d42' }}>
-        {/* {isLoading ? <Splash /> : <Routes />} */}
-        <Routes/>
+      <View style={{ flex: 1, backgroundColor: "#2b2d42" }}>
+        {isLoading ? (
+          <Splash onFinish={() => setIsLoading(false)} />
+        ) : (
+          <Routes />
+        )}
       </View>
     </PaperProvider>
-
   );
 }
