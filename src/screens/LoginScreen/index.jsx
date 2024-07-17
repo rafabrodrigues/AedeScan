@@ -29,7 +29,7 @@ export default function LoginScreen() {
           <ButtonText>Entrar na minha conta</ButtonText>
         </Button>
         <ButtonCadastro
-          onPress={() => navigation.navigate("signUpStack")}
+          onPress={() => navigation.navigate("signUpStep1")}
           bgColor="#2b2d42"
         >
           <ButtonText color="#edf2f4">Não possuo uma conta</ButtonText>

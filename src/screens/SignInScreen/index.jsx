@@ -38,7 +38,7 @@ export default function SignInScreen() {
       <Image
         resizeMode="center"
         source={require("../../../assets/images/aedeScan_title_oficial_png/title_aedescan.png")}
-      ></Image>
+      />
       <InputContainer>
         <InputSmooth
           placeholder="Email"

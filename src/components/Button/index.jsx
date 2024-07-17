@@ -6,8 +6,8 @@ export const Button = styled.TouchableOpacity`
     align-items: center;
     justify-content: center;
     padding-top: 12px;
+    padding-right: 4px;
     padding-bottom: 12px;
-    border-radius: 4px;
 `
 
 export const ButtonText = styled.Text`
@@ -20,3 +20,21 @@ export const ButtonCadastro = styled(Button)`
     border: 2px solid #edf2f4;
 `
 
+export const NextButton = styled.TouchableOpacity`
+    background-color: #ffff;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius:32px;
+    align-self: flex-end;
+    margin-right: 12px;
+`
+
+export const NextButtonText = styled.Text`
+    color: #000;
+    font-size: 16px;
+    font-family: 'Poppins_400Regular';
+`
