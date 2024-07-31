@@ -30,6 +30,7 @@ export default function StackRoutes() {
         name="tabRoutes"
         component={TabRoutes}
         options={{
+          headerShown: false, 
           title: "",
         }}
       />

@@ -26,7 +26,7 @@ export default function TabRoutes() {
   return (
     <Tab.Navigator
       screenOptions={{
-        headerShown: false,
+        headerShown: false, 
         tabBarStyle: {
           backgroundColor: "#2b2d42",
           borderTopWidth: 0.18,
@@ -82,6 +82,7 @@ export default function TabRoutes() {
         name="aviso"
         component={AvisoScreen}
         options={{
+          headerShown: false,
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="notifications-outline" color={color} size={22} />
           ),

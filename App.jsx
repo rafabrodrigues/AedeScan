@@ -57,11 +57,13 @@ export default function App() {
   return (
     <PaperProvider theme={theme}>
       <View style={{ flex: 1, backgroundColor: "#2b2d42" }}>
-        {isLoading ? (
+        {/* {isLoading ? (
           <Splash onFinish={() => setIsLoading(false)} />
         ) : (
           <Routes />
-        )}
+        )} */
+        <Routes/>
+        }
       </View>
     </PaperProvider>
   );

@@ -29,7 +29,6 @@ export default function SignInScreen() {
       Alert.alert("Erro", error.message);
       console.log("Login Error:", error);
     } else {
-      Alert.alert("PASSOU KAKAAKKAKAKAKAKKKKKKKKKKKKK");
       navigation.navigate("tabRoutes");
     }
   };
