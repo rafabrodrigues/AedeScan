@@ -18,6 +18,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { DenunciaContainer, TextDenuncia } from "./style";
 import { useAuth } from "../../hooks/useAuth"; // Adicione o hook useAuth
 
+
 const Tab = createBottomTabNavigator();
 
 export default function TabRoutes() {
